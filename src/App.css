@@ -23,7 +23,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+#day
+{
+  font-weight: 900;
+  font-size: 40px;
+}
+#month
+{
+  font-weight:1000;
+  font-size:32px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +44,143 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1, p {
+  font-family: Lato;
+}
+.holiday-container {
+  display: flex;
+  flex-wrap: wrap;
+  width:70%;
+  height:50%;
+  border:2px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+.holiday-container > div {
+ 
+  width: 20%;
+  text-align: center;
+  margin-top:13px;
+}
+.upcomingholidaybtn
+{
+  margin-left:15%;
+  width:35%;
+  padding:12px;
+  border:2px solid white;
+  margin-top:20px;
+  margin-bottom:10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.upcomingholidaybtn:focus{
+  background-color:rgba(204, 204, 204, 0.938);
+}
+.passedholidaybtn
+{
+  width:35%;
+  padding:12px;
+  border:2px solid white;
+  margin-top:20px;
+  margin-bottom:10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.passedholidaybtn:focus
+{
+  background-color: rgba(204, 204, 204, 0.938);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
+  
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+.close
+{
+  width:7%;
+  padding:6px;
+  border:1px solid rgb(138, 209, 32);
+  background-color:rgb(138, 209, 32);
+  margin-bottom: 4%;
+  margin-top:4%;
+}
+.type
+{
+  border:1px solid rgb(95, 36, 233);
+  background-color:  rgb(95, 36, 233);
+  color:white;
+  padding:9px;
+  border-radius: 18px;
+  margin-top:10px;
+  margin-bottom:25px; 
+
+}
+.description
+{
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom:20px;
+}
+.date
+{
+  font-size:40px;
+  font-weight: 1900;
+  word-spacing:normal;
+}
+.name
+{
+  font-size:22px;
+  font-weight:900;
+}
+.loading
+{
+  text-align: center;
+  margin-top:150px;
+  margin-left: 42%;
+}
+@media only screen and (max-width: 600px) {
+  .holiday-container {
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    border:2px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  
+  .holiday-container > div {
+    width: 10%;
+    text-align: center;
+    font-size: 24px;
+    margin-top:13px;
+  }
+  #month
+  {
+    font-size: 24px;
+  }
+
 }
